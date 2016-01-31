@@ -12,7 +12,7 @@ app.database = 'sample.db'
 
 @app.route('/')
 def home():
-    return "Hello, World!"  # return a string
+    return "Hello World!"  # return a string
 
 @app.route('/display')
 def display():
