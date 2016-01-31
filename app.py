@@ -12,7 +12,11 @@ app.database = 'sample.db'
 
 @app.route('/')
 def home():
-    return "Hello World!"  # return a string
+    return render_template('index.html')
+
+@app.route('/about_me')
+def about_me():
+	return render_template('about_me.html')
 
 @app.route('/display')
 def display():
