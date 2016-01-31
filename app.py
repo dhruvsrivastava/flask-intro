@@ -17,6 +17,7 @@ def home():
 @app.route('/about_me')
 def about_me():
 	return render_template('about_me.html')
+    return "Hello World!"  # return a string
 
 @app.route('/display')
 def display():
